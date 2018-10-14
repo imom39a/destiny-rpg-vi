@@ -1,0 +1,25 @@
+{
+  "name": "Destiny RPG VI",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Destiny RPG VI",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.game.destinyrpg.com/",
+        "https://*.game.destinyrpg.com/*"
+      ],
+      "js": ["jquery-1.7.2.min.js", "keymaster.min.js", "script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "https://*.game.destinyrpg.com/"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png",
+    "256": "icon.png"
+  }
+}
